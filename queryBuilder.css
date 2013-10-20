@@ -532,7 +532,7 @@
 
 .qbGr.ui-sortable-helper,.qbGr.ui-sortable-helper:hover {
 	background: #DEDEDF;
-	filter: alpha(opacity =   80);
+	filter: alpha(opacity =  80);
 	opacity: 0.8;
 	-webkit-border-radius: 5px;
 	behavior: url(./js/PIE.htc);
