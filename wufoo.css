@@ -1,0 +1,202 @@
+@media (-webkit-min-device-pixel-ratio: 2) { 
+    input, textarea{
+    -webkit-appearance: none;      
+    }
+}
+
+input, textarea{
+  outline: none;
+}
+.wufoo, h1, h2, label{ 
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+} 
+.wufoo input[type="password"], .wufoo input[type="text"], 
+.wufoo input[type="email"]{ 
+    margin: 0; 
+    padding: 0; 
+    border: none; 
+    border-radius: 5px; 
+    -pie-border-radius: 5px; 
+    padding: 5px 10px; 
+    height: 30px; 
+    line-height: 20px; 
+    color: #333; 
+    width: 100%; 
+    box-sizing: border-box;  -moz-box-sizing: border-box; 
+    outline: none; 
+} 
+.wufoo label.desc, .wufoo legend.desc, 
+.wufoo li span label{ 
+    color: #fffffe; 
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+    font-size: 12px; 
+    font-weight: normal; 
+      
+} 
+form li.buttons a{ 
+    width: 0; 
+    opacity: 0; 
+    float: left; 
+    filter: (opacity=0); 
+} 
+.wufoo .info{ 
+    display: none; 
+} 
+.wufoo li span{ 
+    width: 100%; 
+} 
+form li.buttons{ 
+    text-align: right; 
+} 
+#form3 li.buttons, 
+#form4 li.buttons{ 
+    text-align: center; 
+} 
+.embed .confirm h2{ 
+    color: #fffffe; 
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+} 
+a.power{ 
+    opacity: 0; 
+    filter: alpha(opacity = 0); 
+} 
+#errorLi{ 
+    padding: 5px; 
+    -webkit-border-radius: 0;   
+    -moz-border-radius: 0;   
+    border-radius: 0;   
+    margin-top: 0; 
+    margin-bottom: 10px; 
+} 
+#errorMsgLbl{ 
+    font-size: 14px; 
+    font-weight: normal; 
+} 
+#errorMsg{ 
+    font-size: 12px; 
+} 
+form li.error{ 
+    background-color: transparent !important; 
+} 
+  
+.wufoo textarea.textarea{ 
+    border-radius:5px; 
+    border: none;
+    background: #fff;
+    box-sizing: border-box;
+    width: 100%;
+} 
+  
+#container .ltr{ 
+    margin:60px 0; 
+} 
+  
+.wufoo input.btTxt{ 
+  border: none; 
+  height: 31px; 
+  text-align: center; 
+  font-size: 14px; 
+  color: #fffffe; 
+  display: inline-block; 
+  line-height: 30px; 
+  border-radius: 5px; 
+  -pie-border-radius: 5px; 
+  background: #739cd2;  
+  padding: 0 12px;   
+    transition-duration: .3s;   
+    -webkit-transition-duration: .3s;   
+    width: 103px; 
+    cursor: pointer; 
+} 
+    .wufoo input.btTxt:hover{ 
+        color: #fffffe; 
+        background: #FF9F8C; 
+    } 
+#form3.wufoo input.btTxt, 
+#form4.wufoo input.btTxt{ 
+    height: 52px; 
+    line-height: 52px; 
+    width: 191px; 
+    font-size: 18px; 
+}  
+  
+.wufoo .section h3 { 
+    font-size: 18px; 
+    color: #fff; 
+    padding-bottom: 4px; 
+} 
+   
+.wufoo label.choice{ 
+    color: #fff; 
+} 
+
+/* (min-width: 768px) and  */
+@media (min-width: 688px) and (max-width: 767px) {
+   #form3 li.leftThird, #form3 li.middleThird, #form3 li.rightThird,
+   #form4 li.leftThird, #form4 li.middleThird, #form4 li.rightThird{
+     width: 48% !important;   
+     box-sizing: border-box;
+     margin-left: 1%;
+  }
+  #form3 li.rightThird,
+  #form4 li.rightThird{
+    padding-left: 0;
+  
+    padding-right: 2%;
+}
+  #form4 li span{
+    width: auto;  
+    display: inline-block;
+    margin-right: 14px;
+  }
+  #form4 li.buttons,
+  #form3 li.buttons{
+    text-align: left;
+    margin-left: 51%
+  }
+  #form4 textarea.textarea,
+  #form3 textarea.textarea{
+    max-height: 97px;
+    height: 97px;  
+    padding: 7px;
+  }
+  #form3.wufoo input.btTxt, #form4.wufoo input.btTxt {
+    height: 30px;
+    line-height: 52px;
+    width: 146px;
+    font-size: 14px;
+    line-height: 30px;
+  }
+  #fo3li24, #fo4li21{
+    margin-left: 1% !important;
+  }
+}
+@media (max-width: 687px){
+   
+  #form3 li.leftThird, #form3 li.middleThird, #form3 li.rightThird,
+   #form4 li.leftThird, #form4 li.middleThird, #form4 li.rightThird{
+     width: 96% !important;   
+     box-sizing: border-box;
+     margin-right: 2% !important; 
+     margin-left: 2% !important; 
+     padding-right: 0 !important; 
+     padding-left: 0 !important; 
+  }
+  #form4 textarea.textarea,
+  #form3 textarea.textarea{
+    max-height: 97px;
+    height: 97px; 
+  }
+  #form3 .section h3,
+  #form4 .section h3{
+    font-size: 14px;
+    text-align: center;
+  }
+  #form3.wufoo input.btTxt, #form4.wufoo input.btTxt{
+    height: 42px;
+    line-height: 42px;
+    width: 98%;
+  
+    margin: 0;
+}
+}
