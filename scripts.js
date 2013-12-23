@@ -21,7 +21,9 @@ var app = {
         }
 
         // init slider
-        var bannerSlider = $('#banner .slider').bxSlider({
+        var bannerSlider;
+	if($('#banner .slider').length > 0){
+         bannerSlider = $('#banner .slider').bxSlider({
             minSlides: 1,
             maxSlides: 1,
             controls: false,
@@ -32,6 +34,7 @@ var app = {
             }
         
         });
+	}
         
         $('.dataTable.challenges tbody, .layChallenges .dataTable tbody').html(null);
         $('#gridView .contestGrid').html(null);
