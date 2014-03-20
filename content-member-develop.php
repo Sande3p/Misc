@@ -16,7 +16,7 @@ $tracks = $coder->Tracks;
 
 if ($track == "develop") {
 	$activeTrack = 'Development';
-	$currentChallengetype = 'development';
+	$currentChallengetype = 'Development';
 }
 if(!empty($ct)){
 	$currentChallengeId = $ct;
@@ -28,8 +28,9 @@ include_once TEMPLATEPATH . '/chart/Highchart.php';
 // line chart
 $chart = new Highchart ();
 $chart->printScripts ();
-
+$challengetypes = array ();
 $challengetypes = get_all_contest ();
+
 array_push ( $challengetypes, 'Design' );
 array_push ( $challengetypes, 'Assembly Competition' );
 array_push ( $challengetypes, 'Development' );
@@ -78,7 +79,7 @@ array_push ( $challengetypes, 'UI Prototype Competition' );
 			</nav>
 			<?php  if(empty($tracks->{$currentChallengetype})):?>
 			<header class="head">
-				<h3 class="nocontestStatus text">Member didn't participated in any Develop contest.</h3>
+				<h3 class="nocontestStatus text">Member rating unavailable or member didn't participated in any Develop contest.</h3>
 			</header>
 			<?php else:?>
 			
